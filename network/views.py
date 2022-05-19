@@ -15,7 +15,7 @@ MAX_POSTS_PER_PAGE = 10
 
 
 #from lecture
-class NewPostForm(forms.Form):
+class NewPostForm(forms.Form): # this just adds a new post
     post_text = forms.Field(widget=forms.Textarea({'rows': '3', 'maxlength': 999, 'class': 'form-control', 'placeholder': "What's happening?"}), label="New Post", required=True)
 
 
